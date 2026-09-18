@@ -1,0 +1,127 @@
+/* ===================================================================
+   Custom Component Styles (Badges, Buttons, Cards)
+   =================================================================== */
+
+/* Status Badge Classes */
+.badge-status-Open {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: rgba(66, 32, 6, 0.85);
+  color: #fde047;
+  border: 1px solid rgba(234, 179, 8, 0.7);
+}
+.badge-status-Open::before {
+  content: '';
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 9999px;
+  background-color: #eab308;
+  box-shadow: 0 0 6px rgba(234, 179, 8, 0.6);
+}
+
+.badge-status-InProgress,
+.badge-status-In-Progress {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: rgba(23, 37, 84, 0.85);
+  color: #93c5fd;
+  border: 1px solid rgba(59, 130, 246, 0.7);
+}
+.badge-status-InProgress::before,
+.badge-status-In-Progress::before {
+  content: '';
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 9999px;
+  background-color: #3b82f6;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.6);
+}
+
+.badge-status-Closed {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: rgba(6, 78, 59, 0.85);
+  color: #86efac;
+  border: 1px solid rgba(34, 197, 94, 0.7);
+}
+.badge-status-Closed::before {
+  content: '';
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 9999px;
+  background-color: #22c55e;
+  box-shadow: 0 0 6px rgba(34, 197, 94, 0.6);
+}
+
+/* Priority Badge Classes */
+.badge-priority-Urgent {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: rgba(69, 10, 10, 0.85);
+  color: #fca5a5;
+  border: 1px solid #dc2626;
+}
+
+.badge-priority-High {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: rgba(66, 32, 6, 0.85);
+  color: #fde047;
+  border: 1px solid #ca8a04;
+}
+
+.badge-priority-Medium {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: rgba(23, 37, 84, 0.85);
+  color: #93c5fd;
+  border: 1px solid #2563eb;
+}
+
+.badge-priority-Low {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: rgba(6, 78, 59, 0.85);
+  color: #86efac;
+  border: 1px solid #16a34a;
+}
+

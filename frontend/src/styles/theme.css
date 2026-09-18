@@ -1,0 +1,46 @@
+/* ===================================================================
+   Datastraw Support CRM - Dark Red & Brown Theme Styles
+   =================================================================== */
+
+:root {
+  --bg-darkest: #0e0808;
+  --bg-dark: #140c0c;
+  --bg-card: #1a1010;
+  --bg-card-hover: #231515;
+  --border-dark: #2f1a1a;
+  --border-light: #3d2424;
+  
+  --accent-red: #e11d48;
+  --accent-red-hover: #be123c;
+  --accent-brown: #92400e;
+  --accent-amber: #d97706;
+  
+  --text-primary: #ffffff;
+  --text-muted: #9e8c8c;
+  --text-subtle: #cbbaba;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5a3434;
+}
+
+/* Subtle glow utilities */
+.glow-red {
+  box-shadow: 0 0 25px -4px rgba(225, 29, 72, 0.35);
+}
+
+.glow-brown {
+  box-shadow: 0 0 25px -4px rgba(180, 83, 9, 0.35);
+}

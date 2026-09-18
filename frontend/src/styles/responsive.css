@@ -1,0 +1,47 @@
+/* ===================================================================
+   Targeted Responsiveness Rules (Mobile, Tablet, Desktop)
+   =================================================================== */
+
+/* 1. Mobile Screen Optimizations (< 640px) */
+@media (max-width: 639px) {
+  /* Ensure table cards scroll with smooth momentum */
+  .table-responsive-container {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  /* Compact Model Dialog on mobile */
+  .modal-dialog-responsive {
+    width: 100% !important;
+    max-height: 95vh !important;
+    margin: 0.5rem;
+    border-radius: 1rem !important;
+  }
+
+  /* Form Grid stacking */
+  .form-grid-responsive {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Header action buttons padding */
+  .header-actions-responsive {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* 2. Tablet Screen Optimizations (640px - 1024px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .stats-grid-responsive {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* 3. Touch Device Interactions */
+@media (hover: none) {
+  .btn-touch {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+}
