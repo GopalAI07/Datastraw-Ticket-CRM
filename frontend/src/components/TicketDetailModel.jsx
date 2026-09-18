@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { X, MessageSquare, Clock, Check, Loader2 } from 'lucide-react';
+import { getApiUrl } from '../config';
 
 export default function TicketDetailModel({ ticketId, isOpen, onClose, onUpdateSuccess }) {
   const [ticket, setTicket] = useState(null);
@@ -20,7 +21,7 @@ export default function TicketDetailModel({ ticketId, isOpen, onClose, onUpdateS
   const loadTicket = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`/api/tickets/${ticketId}`);
+      const res = await fetch(getApiUrl(`/api/tickets/${ticketId}`));
       if (!res.ok) throw new Error('Ticket not found');
       const data = await res.json();
       setTicket(data);
@@ -38,7 +39,7 @@ export default function TicketDetailModel({ ticketId, isOpen, onClose, onUpdateS
 
     setUpdating(true);
     try {
-      const res = await fetch(`/api/tickets/${ticketId}`, {
+      const res = await fetch(getApiUrl(`/api/tickets/${ticketId}`), {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

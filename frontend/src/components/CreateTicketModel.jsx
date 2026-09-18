@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, Ticket, Send, Loader2 } from 'lucide-react';
+import { getApiUrl } from '../config';
 
 export default function CreateTicketModel({ isOpen, onClose, onSuccess }) {
   const [formData, setFormData] = useState({
@@ -40,7 +41,7 @@ export default function CreateTicketModel({ isOpen, onClose, onSuccess }) {
 
     setSubmitting(true);
     try {
-      const res = await fetch('/api/tickets', {
+      const res = await fetch(getApiUrl('/api/tickets'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

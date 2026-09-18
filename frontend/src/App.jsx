@@ -6,6 +6,7 @@ import TicketTable from './components/TicketTable';
 import CreateTicketModel from './components/CreateTicketModel';
 import TicketDetailModel from './components/TicketDetailModel';
 import Toast from './components/Toast';
+import { getApiUrl } from './config';
 
 export default function App() {
   const [tickets, setTickets] = useState([]);
@@ -47,7 +48,7 @@ export default function App() {
       if (activeStatus) params.append('status', activeStatus);
       if (searchQuery) params.append('search', searchQuery);
 
-      const res = await fetch(`/api/tickets?${params.toString()}`);
+      const res = await fetch(getApiUrl(`/api/tickets?${params.toString()}`));
       if (!res.ok) throw new Error('Failed to fetch tickets');
       const data = await res.json();
       setTickets(data);
@@ -61,7 +62,7 @@ export default function App() {
 
   const fetchStats = async () => {
     try {
-      const res = await fetch('/api/stats');
+      const res = await fetch(getApiUrl('/api/stats'));
       if (!res.ok) return;
       const data = await res.json();
       setStats(data);

@@ -4,6 +4,14 @@ A full-stack Customer Support Ticket Management CRM built with **FastAPI (Python
 
 ---
 
+## 🌐 Live Deployments
+
+- **Frontend (Vercel)**: [https://frontend-five-psi-fwfthsuuog.vercel.app/](https://frontend-five-psi-fwfthsuuog.vercel.app/)
+- **Backend API (Render)**: [https://datastraw-ticket-crm-bp5s.onrender.com/](https://datastraw-ticket-crm-bp5s.onrender.com/)
+- **Interactive API Docs (Swagger)**: [https://datastraw-ticket-crm-bp5s.onrender.com/docs](https://datastraw-ticket-crm-bp5s.onrender.com/docs)
+
+---
+
 ## 🚀 Features
 
 - **Ticket Lifecycle Management**: Create, view, update status (`Open`, `In Progress`, `Closed`), and assign priorities (`Low`, `Medium`, `High`, `Urgent`).
