@@ -29,8 +29,15 @@ env/
 
 # Environment & Secrets
 .env
+.env.*
 .env.local
 .env.*.local
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+!.env.example
+!**/.env.example
 *.pem
 *.key
 
